@@ -1,5 +1,7 @@
 # coding-challenge-typescript
 
+[![Build Status](https://travis-ci.org/shawnkoon/coding-challenge-typescript.svg?branch=master)](https://travis-ci.org/shawnkoon/coding-challenge-typescript)
+
 List of coding challenge questions with my solutions using typescript.
 
 ## How to run

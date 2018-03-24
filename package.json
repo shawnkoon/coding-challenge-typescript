@@ -15,7 +15,10 @@
     "type": "git",
     "url": "git+https://github.com/shawnkoon/coding-challenge-typescript.git"
   },
-  "author": "shawnkoon",
+  "author": {
+    "name": "shawnkoon",
+    "url": "https://github.com/shawnkoon"
+  },
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/shawnkoon/coding-challenge-typescript/issues"
