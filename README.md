@@ -1,6 +1,8 @@
 # coding-challenge-typescript
 
-[![Build Status](https://travis-ci.org/shawnkoon/coding-challenge-typescript.svg?branch=master)](https://travis-ci.org/shawnkoon/coding-challenge-typescript)
+Master | GreenKeeper
+--- | ---
+[![Build Status](https://travis-ci.org/shawnkoon/coding-challenge-typescript.svg?branch=master)](https://travis-ci.org/shawnkoon/coding-challenge-typescript) | [![Greenkeeper badge](https://badges.greenkeeper.io/shawnkoon/coding-challenge-typescript.svg)](https://greenkeeper.io/)
 
 List of coding challenge questions with my solutions using typescript.
 
@@ -13,6 +15,20 @@ Install dependencies
 
 $ npm run install
 
+Run mocha tests
+
+$ npm run test
+
+```
+
+### Running individual file
+
+1. Install Node & NPM.
+
+```bash
+Install dependencies
+
+$ npm run install
 
 Run typescript file.
 
@@ -23,7 +39,7 @@ or
 $ npx ts-node src/___.ts
 ```
 
-## Build and run Javascript (Optional)
+### Build and run Javascript (Optional)
 
 1. Install Node & NPM.
 

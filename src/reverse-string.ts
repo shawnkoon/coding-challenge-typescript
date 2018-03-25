@@ -12,6 +12,11 @@ export const reverse = (str: string): string => {
   return res;
 };
 
+export const reverseFunction = (str: string): string => {
+  const charArray = str.split('');
+  return charArray.reverse().join('');
+};
+
 /**
  * reverse
  * @param str: string to be reversed.
