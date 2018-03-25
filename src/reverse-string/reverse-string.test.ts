@@ -2,9 +2,9 @@
 import { expect } from 'chai';
 
 // App
-import { reverse, reverseFunction, reverseInES6 } from '../reverse-string';
+import { reverse, reverseFunction, reverseInES6 } from './reverse-string';
 
-describe('reverse-string.ts', () => {
+describe('reverse-string', () => {
 
   describe('Testing string reverse function', () => {
     it(`should reverse 'abc' to 'cba'`, () => {

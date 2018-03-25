@@ -22,7 +22,5 @@ export const reverseFunction = (str: string): string => {
  * @param str: string to be reversed.
  */
 export const reverseInES6 = (str: string): string => {
-  return str.split('').reduce((prev: string, _cur: string, index: number, ara: string[]) => {
-    return prev += ara[(ara.length - 1) - index];
-  }, '');
+  return str.split('').reduce((prev: string, cur: string) => cur + prev, '');
 };
