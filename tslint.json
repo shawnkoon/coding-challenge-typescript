@@ -3,6 +3,7 @@
     "rules": {
         "no-console": false,
         "quotemark": false,
-        "variable-name": false
+        "variable-name": false,
+        "interface-name": false
     }
 }

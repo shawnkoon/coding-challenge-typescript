@@ -6,7 +6,6 @@
   "scripts": {
     "test": "mocha -R spec -r ts-node/register 'src/**/*.test.ts'",
     "test:watch": "npm run test -- --watch-extensions ts -w",
-    "start": "ts-node",
     "clean": "rm -rf ./dist",
     "build": "npm run clean && tsc",
     "build:watch": "tsc -w",
