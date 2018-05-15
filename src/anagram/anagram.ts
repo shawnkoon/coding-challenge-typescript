@@ -23,6 +23,11 @@ export const isAnagram = (str1: string, str2: string): boolean => {
   return isCompose(map1, map2) && isCompose(map2, map1);
 };
 
+export const isAnagramQuick = (str1: string, str2: string): boolean => {
+  return str1.replace(/[^\w]/g, '').toLowerCase().split('').sort().join()
+    === str2.replace(/[^\w]/g, '').toLowerCase().split('').sort().join();
+};
+
 const isCompose = (from: WordMap, to: WordMap): boolean => {
   for (const letter in from) {
     if (!to[letter]) {
