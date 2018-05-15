@@ -9,7 +9,7 @@
     "clean": "rm -rf ./dist",
     "build": "npm run clean && tsc",
     "build:watch": "tsc -w",
-    "lint": "tslint src/*.ts -t verbose"
+    "lint": "tslint src/**/*.ts -t verbose"
   },
   "repository": {
     "type": "git",

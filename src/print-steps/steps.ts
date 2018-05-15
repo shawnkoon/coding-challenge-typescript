@@ -29,5 +29,7 @@ export const printSteps = (n: number, position: number = 1): void => {
 
   console.log(str);
 
-  position < n && printSteps(n, position + 1);
+  if (position < n) {
+    printSteps(n, position + 1);
+  }
 };

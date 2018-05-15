@@ -43,6 +43,7 @@ describe('reverse-int', () => {
     });
 
     it('should reverse with 0s at the end 500 -> 5', () => {
-      expect(reverseShort(500)).to.equal(5)});
+      expect(reverseShort(500)).to.equal(5);
+    });
   });
 });
