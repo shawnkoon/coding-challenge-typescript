@@ -29,6 +29,43 @@ export const getFibonacci = (n: number, prev: number = 0, cur: number = 1): numb
   return getFibonacci(n - 1, cur, prev + cur);
 };
 
+/*
+ Memoize basic concept
+
+ const x = () => {
+	const a = [];
+
+  return () => {
+    console.log('a before push', a);
+  	a.push(a.length);
+
+    return a;
+  };
+}
+
+const mem = x();
+
+console.log(mem());
+console.log(mem());
+console.log(mem());
+console.log(mem());
+
+------------------------------------------
+
+a before push []
+[0]
+
+a before push [0]
+(2) [0, 1]
+
+a before push (2) [0, 1]
+(3) [0, 1, 2]
+
+a before push (3) [0, 1, 2]
+(4) [0, 1, 2, 3]
+
+*/
+
 type FibonacciParams = (n: number) => number;
 
 export const memoize = (slowFib: FibonacciParams): FibonacciParams => {
