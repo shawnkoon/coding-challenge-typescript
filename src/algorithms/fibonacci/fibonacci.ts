@@ -32,12 +32,12 @@ export const getFibonacci = (n: number, prev: number = 0, cur: number = 1): numb
 /*
  Memoize basic concept
 
- const x = () => {
-	const a = [];
+const x = () => {
+  const a = [];
 
   return () => {
     console.log('a before push', a);
-  	a.push(a.length);
+    a.push(a.length);
 
     return a;
   };
