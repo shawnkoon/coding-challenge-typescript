@@ -4,7 +4,7 @@
   "description": "List of coding challenge questions with my solutions using typescript.",
   "main": "src/index.ts",
   "scripts": {
-    "test": "mocha -R spec -r ts-node/register 'src/**/*.test.ts'",
+    "test": "mocha -R spec -r ts-node/register 'src/**/*.test.ts' -s 0",
     "test:watch": "npm run test -- --watch-extensions ts -w",
     "clean": "rm -rf ./dist",
     "build": "npm run clean && tsc",

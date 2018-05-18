@@ -44,23 +44,19 @@ export const createSpiralMatrix = (n: number): number[][] => {
   while (true) {
     // East
     while (col + 1 < n && !result[row][col + 1]) {
-      col++;
-      result[row][col] = count++;
+      result[row][++col] = count++;
     }
     // South
     while (row + 1 < n && !result[row + 1][col]) {
-      row++;
-      result[row][col] = count++;
+      result[++row][col] = count++;
     }
     // West
     while (col - 1 >= 0 && !result[row][col - 1]) {
-      col--;
-      result[row][col] = count++;
+      result[row][--col] = count++;
     }
     // North
     while (row - 1 >= 0 && !result[row - 1][col]) {
-      row--;
-      result[row][col] = count++;
+      result[--row][col] = count++;
     }
 
     // Base Case
