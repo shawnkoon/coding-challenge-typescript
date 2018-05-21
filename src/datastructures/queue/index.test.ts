@@ -2,7 +2,7 @@
 import { expect } from 'chai';
 
 // App
-import { Queue } from './index';
+import { Queue } from '../queue';
 
 describe('Queue', () => {
   let queue: Queue<number>;
