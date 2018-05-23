@@ -66,9 +66,9 @@ a before push (3) [0, 1, 2]
 
 */
 
-type FibonacciParams = (n: number) => number;
+type FibonacciFunctionParams = (n: number) => number;
 
-export const memoize = (slowFib: FibonacciParams): FibonacciParams => {
+export const memoize = (slowFib: FibonacciFunctionParams): FibonacciFunctionParams => {
   const cache: { [n: number]: number } = {};
 
   return (n: number): number => {

@@ -11,6 +11,8 @@ import { Node } from './Node';
 
 export type NodeType = Node | undefined;
 
+export type ForEachFunctionType = (node: Node, index?: number) => any;
+
 export class LinkedList {
   public head: NodeType;
 
@@ -166,5 +168,26 @@ export class LinkedList {
     }
 
     prev!.next = newNode;
+  }
+
+  public forEach(callback: ForEachFunctionType): void {
+    let cur: NodeType = this.head;
+    let counter: number = 0;
+
+    while (cur) {
+      callback(cur, counter);
+      counter++;
+      cur = cur.next;
+    }
+  }
+
+  // Generator function
+  public *[Symbol.iterator](): IterableIterator<any> {
+    let cur: NodeType = this.head;
+
+    while (cur) {
+      yield cur;
+      cur = cur.next;
+    }
   }
 }

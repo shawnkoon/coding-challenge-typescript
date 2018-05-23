@@ -279,7 +279,7 @@ describe('Linked Lists', () => {
     });
   });
 
-  describe.skip('ForEach', () => {
+  describe('ForEach', () => {
     it('should applies a transform to each node', () => {
       const l = new LinkedList();
 
@@ -292,14 +292,14 @@ describe('Linked Lists', () => {
         node.data += 10;
       });
 
-      expect(l.getAt(0).data).to.equal(11);
-      expect(l.getAt(1).data).to.equal(12);
-      expect(l.getAt(2).data).to.equal(13);
-      expect(l.getAt(3).data).to.equal(14);
+      expect(l.getAt(0)!.data).to.equal(11);
+      expect(l.getAt(1)!.data).to.equal(12);
+      expect(l.getAt(2)!.data).to.equal(13);
+      expect(l.getAt(3)!.data).to.equal(14);
     });
   });
 
-  describe.skip('for...of loops', () => {
+  describe('for...of loops', () => {
     it('should works with the linked list', () => {
       const l = new LinkedList();
 
@@ -312,10 +312,10 @@ describe('Linked Lists', () => {
         node.data += 10;
       }
 
-      expect(l.getAt(0).data).to.equal(11);
-      expect(l.getAt(1).data).to.equal(12);
-      expect(l.getAt(2).data).to.equal(13);
-      expect(l.getAt(3).data).to.equal(14);
+      expect(l.getAt(0)!.data).to.equal(11);
+      expect(l.getAt(1)!.data).to.equal(12);
+      expect(l.getAt(2)!.data).to.equal(13);
+      expect(l.getAt(3)!.data).to.equal(14);
     });
 
     it('should for...of works on an empty list', () => {
