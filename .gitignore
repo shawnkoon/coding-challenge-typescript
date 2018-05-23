@@ -60,3 +60,6 @@ typings/
 # typescript & vscode
 .vscode
 dist
+
+# Misc
+.DS_Store
