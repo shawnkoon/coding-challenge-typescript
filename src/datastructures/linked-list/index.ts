@@ -1,2 +1,2 @@
-export { LinkedList } from './LinkedList';
-export { Node } from './Node';
+export * from './LinkedList';
+export * from './Node';
