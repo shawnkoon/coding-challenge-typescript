@@ -2,7 +2,7 @@
 import { expect } from 'chai';
 
 // App
-import { getFibonacci, getFibonacciMemoized, getFibonacciSlow } from './fibonacci';
+import { getFibonacci, getFibonacciMemoized } from './fibonacci';
 
 describe('Fibonacci', () => {
   const n1 = 3;

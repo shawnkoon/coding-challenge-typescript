@@ -29,9 +29,9 @@ describe('Stack', () => {
   });
 
   it('should return undefined if no item is left to pop() in the stack', () => {
-    for (const item of insertArray) {
+    insertArray.forEach(() => {
       stack.pop();
-    }
+    });
 
     expect(stack.pop()).to.equal(undefined);
   });
