@@ -31,7 +31,7 @@
     "typescript": "^3.3.3333"
   },
   "devDependencies": {
-    "@types/chai": "4.1.4",
+    "@types/chai": "4.2.8",
     "@types/lodash": "4.14.131",
     "@types/mocha": "5.2.6",
     "chai": "4.1.2",
